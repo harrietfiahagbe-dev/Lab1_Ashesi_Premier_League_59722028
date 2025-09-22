@@ -30,10 +30,10 @@ public class PlayerSelection {
         int current_weight;
         String Eligibility;
         String player_type;
-
-
         String final_decision;
         String attacker_response;
+
+
 
         //Taking Input from the user. (Basic Information, weight, height, name, age, etc.)
         System.out.print("Enter your name: ");
