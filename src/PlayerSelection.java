@@ -24,11 +24,13 @@ public class PlayerSelection {
         double new_weight;
         double new_height;
         int current_height;
+        String lineup_final = "";
+        String player_position = "";
         int current_weight;
         String Eligibility;
         String player_type;
-        String player_position = "";
-        String lineup_final = "";
+
+
         String final_decision;
         String attacker_response;
 
@@ -69,6 +71,8 @@ public class PlayerSelection {
             player_type = "Vetran";
             //System.out.println("Vetran");
         }
+
+
         // Determining the position of the player
         switch (jersey_number) {
 
@@ -115,7 +119,8 @@ public class PlayerSelection {
         if (player_type.equals("Prime Player")) {
             if (current_weight < 80) {
                 lineup_final = "Lineup";
-            } else {
+            }
+            else {
                 lineup_final = "Bench";
             }
         }
