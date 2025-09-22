@@ -58,7 +58,7 @@ public class PlayerSelection {
         //Converting weight to Pounds
         new_weight = POUND * weight;
 
-        //Performing Type conversion to change weight and weight to an integer
+        //Performing Type casting to change weight and weight to an integer
         current_height = (int) new_height;
         current_weight = (int) new_weight;
 
