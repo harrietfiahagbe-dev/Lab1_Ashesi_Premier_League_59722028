@@ -59,7 +59,7 @@ public class PlayerSelection {
         current_height = (int) new_height;
         current_weight = (int) new_weight;
 
-
+//New comment
         //Determining the Category for the player
         if (age < 20) {
             player_type = "Rising Star";
