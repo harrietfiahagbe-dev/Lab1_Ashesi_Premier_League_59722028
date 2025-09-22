@@ -8,6 +8,7 @@ import java.util.Scanner;
 //Declaring the main function, to allow the program to run
 public class PlayerSelection {
     public static void main(String[] args) {
+
         //Creating Scanner object for user input
         Scanner input = new Scanner(System.in);
 
@@ -15,7 +16,7 @@ public class PlayerSelection {
         float POUND = 0.45359237f;
         int METER = 100;
 
-        //Declaring variable to use in the program
+        //Declaring variables to use in the program
         String name;
         int age;
         double height;
@@ -34,7 +35,7 @@ public class PlayerSelection {
         String final_decision;
         String attacker_response;
 
-        //Input from the user. (Basic Information, weight, height, name, age, etc.)
+        //Taking Input from the user. (Basic Information, weight, height, name, age, etc.)
         System.out.print("Enter your name: ");
         name = input.nextLine();
 
@@ -52,14 +53,16 @@ public class PlayerSelection {
 
 
         //Coverting height to cm
+        new_height = height * METER;
+
         //Converting weight to Pounds
         new_weight = POUND * weight;
-        new_height = height * METER;
+
         //Performing Type conversion to change weight and weight to an integer
         current_height = (int) new_height;
         current_weight = (int) new_weight;
 
-//New comment
+
         //Determining the Category for the player
         if (age < 20) {
             player_type = "Rising Star";
@@ -111,7 +114,7 @@ public class PlayerSelection {
             Eligibility = "Eligible";
             //System.out.println(Eligibility);
         } else {
-            Eligibility = " Not Eligible";
+            Eligibility = "Not Eligible";
             //System.out.println("Not Eligible");
         }
 
