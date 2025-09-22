@@ -154,7 +154,8 @@ public class PlayerSelection {
         System.out.println("Thank you for using our Platform, have a good day !");
 
 
-
+//Closing the Scanner Object
+ input.close();
 
 
 
